@@ -28,7 +28,7 @@ dependencies {
 
 
 ## Requirements
-* Android SDK 16+
+* Android SDK 19+
 
 
 ## Usage
