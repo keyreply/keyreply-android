@@ -1,7 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'com.github.dcendents.android-maven'
 
 ext {
     bintrayRepo = 'KeyReply'
@@ -12,10 +11,10 @@ ext {
     libraryDescription = 'SDK for KeyReply'
     siteUrl = 'https://github.com/keyreply/keyreply-android'
     gitUrl = 'https://github.com/keyreply/keyreply-android'
-    libraryVersion = '1.2'
-    developerId = 'tumapu'
-    developerName = "Nguyen Thanh Tu"
-    developerEmail = 'tu.nguyenthanh93@gmail.com'
+    libraryVersion = '1.2.1'
+    developerId = 'jp3rd'
+    developerName = "keyreply"
+    developerEmail = 'support@keyreply.com'
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
     allLicenses = ["Apache-2.0"]
@@ -53,5 +52,10 @@ repositories {
     mavenCentral()
 }
 
+apply from: 'publishingScript.gradle'
+
+tasks.withType(Javadoc).all {
+    enabled = false
+}
 //apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
 //apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

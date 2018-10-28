@@ -17,7 +17,7 @@ Demo application is included in the `demo` folder. To run it, clone the repo, an
 ### Gradle
 ```gradle
 dependencies {
-  compile 'com.keyreply:keyreply:1.2'
+  compile 'com.keyreply:keyreply:1.2.1'
 }
 ``` 
 
@@ -40,7 +40,6 @@ Add widget in your xml layout and replace clientId with your own Client Id, like
         android:id="@+id/keyReplyView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:clientId="your_client_id"
         />
 ```
 
@@ -55,7 +54,6 @@ By default, KeyReplySDK will show expanded UI on load. This can be disabled by:
         android:id="@+id/keyReplyView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:clientId="your_client_id"
         app:expanded="false"
         />
 ```
@@ -66,7 +64,16 @@ All customization of appearance are to be done via KeyReply's web console.
 
 
 
-## Action
+## APIs
+
+### Setting server url
+keyReplyView.setServerSetting("server_url");
+
+### Setting user setting
+keyReplyView.setUserSetting(JSONObject);
+
+### Setting env url (webview url)
+keyReplyView.setEnvUrl("env_url");
 
 ### Expand/Collapse/Toggle chat window
 

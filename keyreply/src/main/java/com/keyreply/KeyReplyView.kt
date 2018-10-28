@@ -166,7 +166,7 @@ class KeyReplyView : RelativeLayout, AnkoLogger {
         }
 
         /**
-         * Set clientId
+         * Set env url
          */
         fun setEnvUrl(envUrl: String?) {
             if (envUrl == null || envUrl.isEmpty())
