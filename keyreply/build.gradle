@@ -11,7 +11,7 @@ ext {
     libraryDescription = 'SDK for KeyReply'
     siteUrl = 'https://github.com/keyreply/keyreply-android'
     gitUrl = 'https://github.com/keyreply/keyreply-android'
-    libraryVersion = '1.2.1'
+    libraryVersion = '1.2.2'
     developerId = 'jp3rd'
     developerName = "keyreply"
     developerEmail = 'support@keyreply.com'

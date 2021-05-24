@@ -17,7 +17,7 @@ Demo application is included in the `demo` folder. To run it, clone the repo, an
 ### Gradle
 ```gradle
 dependencies {
-  compile 'com.keyreply:keyreply:1.2.1'
+  compile 'com.keyreply:keyreply:1.2.2'
 }
 ``` 
 
